@@ -133,7 +133,7 @@ const NavBar = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
-        <ul className="flex flex-col items-center justify-center h-full relative">
+        <ul className="flex flex-col items-center justify-center h-full">
           <li className="my-6">
             <a href="#home" className="text-xl hover:underline">
               {language === "EN" ? "Home" : "Inicio"}
@@ -154,7 +154,7 @@ const NavBar = () => {
               {language === "EN" ? "Contact" : "Contacto"}
             </a>
           </li>
-          <div className="absolute bottom-52 w-full flex justify-center">
+          <div className="mt-12">
             <button
               className="flex items-center space-x-2 text-white"
               onClick={toggleLanguageMenu}
@@ -164,7 +164,7 @@ const NavBar = () => {
               <VscChevronDown size={25} />
             </button>
             {isLanguageMenuOpen && (
-              <div className="absolute top-full mt-2 w-24 bg-gray-800 rounded-md shadow-lg">
+              <div className="mt-2 w-24 bg-gray-600 rounded-md shadow-lg">
                 <button
                   onClick={() => handleLanguageChange("EN")}
                   className="block px-4 py-2 text-white hover:bg-gray-700"
