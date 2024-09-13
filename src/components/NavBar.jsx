@@ -3,52 +3,30 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineGlobal } from "react-icons/ai";
 import { VscChevronDown } from "react-icons/vsc";
 import logo from "../assets/Logo-Octetus.png";
 import logoRyp from "../assets/Logo-rypCloud.png";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [language, setLanguage] = useState("EN");
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const toggleLanguageMenu = () => {
-    setIsLanguageMenuOpen(!isLanguageMenuOpen);
-  };
-
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang);
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleLanguageMenu = () => setIsLanguageMenuOpen(!isLanguageMenuOpen);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
     setIsLanguageMenuOpen(false);
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
+    document.body.classList.toggle("overflow-hidden", isOpen);
+    return () => document.body.classList.remove("overflow-hidden");
   }, [isOpen]);
 
   return (
@@ -67,25 +45,25 @@ const NavBar = () => {
               href="#home"
               className="text-white hover:underline hidden md:block"
             >
-              {language === "EN" ? "Home" : "Inicio"}
+              {t('navbar.home')}
             </a>
             <a
               href="#about"
               className="text-white hover:underline hidden md:block"
             >
-              {language === "EN" ? "About" : "Acerca de"}
+               {t('navbar.about')}
             </a>
             <a
               href="#services"
               className="text-white hover:underline hidden md:block"
             >
-              {language === "EN" ? "Services" : "Servicios"}
+               {t('navbar.services')}
             </a>
             <a
               href="#contact"
               className="text-white hover:underline hidden md:block"
             >
-              {language === "EN" ? "Contact" : "Contacto"}
+               {t('navbar.contact')}
             </a>
             <div className="relative hidden md:block">
               <button
@@ -93,19 +71,19 @@ const NavBar = () => {
                 onClick={toggleLanguageMenu}
               >
                 <AiOutlineGlobal size={25} />
-                <span>{language === "EN" ? "EN" : "ES"}</span>
+                <span>{i18n.language === "en" ? "EN" : "ES"}</span>
                 <VscChevronDown size={25} />
               </button>
               {isLanguageMenuOpen && (
                 <div className="absolute right-0 mt-2 w-24 bg-gray-800 rounded-md shadow-lg">
                   <button
-                    onClick={() => handleLanguageChange("EN")}
+                    onClick={() => changeLanguage("en")}
                     className="block px-4 py-2 text-white hover:bg-gray-700"
                   >
                     EN
                   </button>
                   <button
-                    onClick={() => handleLanguageChange("ES")}
+                    onClick={() => changeLanguage("es")}
                     className="block px-4 py-2 text-white hover:bg-gray-700"
                   >
                     ES
@@ -136,22 +114,22 @@ const NavBar = () => {
         <ul className="flex flex-col items-center justify-center h-full relative">
           <li className="my-6">
             <a href="#home" className="text-xl hover:underline">
-              {language === "EN" ? "Home" : "Inicio"}
+            {t('navbar.home')}
             </a>
           </li>
           <li className="my-6">
             <a href="#about" className="text-xl hover:underline">
-              {language === "EN" ? "About" : "Acerca de"}
+            {t('navbar.about')}
             </a>
           </li>
           <li className="my-6">
             <a href="#services" className="text-xl hover:underline">
-              {language === "EN" ? "Services" : "Servicios"}
+            {t('navbar.services')}
             </a>
           </li>
           <li className="my-6">
             <a href="#contact" className="text-xl hover:underline">
-              {language === "EN" ? "Contact" : "Contacto"}
+            {t('navbar.contact')}
             </a>
           </li>
           <div className="absolute bottom-52 w-full flex justify-center">
@@ -160,19 +138,19 @@ const NavBar = () => {
               onClick={toggleLanguageMenu}
             >
               <AiOutlineGlobal size={25} />
-              <span>{language === "EN" ? "EN" : "ES"}</span>
+              <span>{i18n.language === "en" ? "EN" : "ES"}</span>
               <VscChevronDown size={25} />
             </button>
             {isLanguageMenuOpen && (
               <div className="absolute top-full mt-2 w-24 bg-gray-800 rounded-md shadow-lg">
                 <button
-                  onClick={() => handleLanguageChange("EN")}
+                  onClick={() => changeLanguage("en")}
                   className="block px-4 py-2 text-white hover:bg-gray-700"
                 >
                   EN
                 </button>
                 <button
-                  onClick={() => handleLanguageChange("ES")}
+                  onClick={() => changeLanguage("es")}
                   className="block px-4 py-2 text-white hover:bg-gray-700"
                 >
                   ES
@@ -190,6 +168,7 @@ const NavBar = () => {
         } transition-opacity duration-300 ease-in-out w-1/2`}
         onClick={toggleMenu}
       ></div>
+       
     </nav>
   );
 };
