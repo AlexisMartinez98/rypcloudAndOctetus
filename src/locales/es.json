@@ -1,0 +1,27 @@
+{
+    "home": {
+      "title": "IMPULSANDO LA INNOVACIÓN",
+      "subtitle": "Experimente soluciones de IA",
+      "button": "Ver servicios"
+    },
+    "about": {
+      "title": "IMPULSANDO SECTORES CON IA",
+      "heading": "Soluciones de software innovadoras",
+      "description": "Ryp Cloud y Octetus se especializan en desarrollar soluciones de software de vanguardia con inteligencia artificial. Atendemos a sectores vitales como el gobierno, las finanzas, la salud y el comercio minorista, asegurando que nuestros clientes en Chile y Colombia se beneficien de los últimos avances tecnológicos. Nuestro compromiso con la innovación nos impulsa a crear aplicaciones eficientes y fáciles de usar que transforman las operaciones y mejoran los procesos de toma de decisiones.",
+      "button": "Póngase en contacto"
+    },
+    "services": {
+      "title": "TRANSFORMANDO INDUSTRIAS CON TECNOLOGÍA",
+      "ai": {
+        "heading": "Desarrollo de software con IA",
+        "description": "Descubra el potencial de su negocio con nuestros servicios avanzados de desarrollo de software de inteligencia artificial. Nos especializamos en crear soluciones personalizadas que mejoran la eficiencia operativa, agilizan los procesos e impulsan la innovación. Nuestro equipo de expertos colabora estrechamente con clientes de diversos sectores, incluidos el gobierno, las finanzas, la atención médica y el comercio minorista, para ofrecer software de alta calidad que satisfaga sus necesidades específicas. Al aprovechar los últimos avances en inteligencia artificial, ayudamos a las organizaciones a aprovechar los datos para tomar decisiones informadas, mejorar las experiencias de los clientes y lograr una ventaja competitiva en su industria."
+      },
+      "custom": {
+        "heading": "Soluciones de software a medida",
+        "description": "Experimente el poder de las soluciones de software personalizadas diseñadas específicamente para los requisitos de su organización. En Ryp Cloud y Octetus, entendemos que cada negocio es único, por eso ofrecemos desarrollo de software personalizado que se alinea con sus objetivos. Nuestros desarrolladores experimentados utilizan las últimas tecnologías para crear software escalable, seguro y eficiente adaptado a sus operaciones. Ya sea que necesite una nueva aplicación o una actualización de sus sistemas existentes, garantizamos una integración perfecta que mejora la productividad y acelera el crecimiento en varios sectores, incluidos las finanzas, la atención médica y el comercio minorista."
+      },
+      "tailored_services": "Servicios a medida",
+      "button": "Agendar cita"
+    }
+  }
+  
