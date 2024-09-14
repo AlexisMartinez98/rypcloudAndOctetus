@@ -30,7 +30,9 @@ const About = () => {
           </p>
           <div className=" flex justify-center md:justify-start mt-8">
             <button className="bg-[#046878] text-lg p-3 px-10 rounded-full w-full md:w-1/2 lg:w-1/3 text-white">
-            {t("about.button")}
+            <a href="#contact">
+              {t("about.button")}
+              </a>
             </button>
           </div>
         </div>
