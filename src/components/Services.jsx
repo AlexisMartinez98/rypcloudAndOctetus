@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const Services = () => {
   const { t } = useTranslation();
   return (
-    <div className="roboto-regular px-6 py-8 flex flex-col md:px-16 lg:px-0">
+    <div id="services" className="roboto-regular px-6 py-8 flex flex-col md:px-16 lg:px-0">
       <div className="shadow-custom-b roboto-medium lg:mx-10 xl:mx-48">
         <h1 className="text-2xl md:text-3xl lg:text-4xl roboto-bold">
         {t("services.title")}
@@ -46,7 +46,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center p-4 lg:mx-48">
+      <div className="flex flex-col items-center p-4 lg:mx-48 md:mt-20">
         <p className="roboto-bold mb-4 text-xl lg:text-2xl">
         {t("services.tailored_services")}
         </p>

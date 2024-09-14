@@ -4,8 +4,8 @@ import innovative from "../assets/innovative software solutions.png";
 const About = () => {
   const {t} = useTranslation()
   return (
-    <div className=" roboto-regular bg-[#393939] px-4 py-8 text-white flex flex-col md:px-16 md:bg-[#EBEBEB] md:text-black">
-      <div className="  m-2 shadow-custom-b roboto-medium lg:mx-48  ">
+    <div id="about" className=" roboto-regular bg-[#393939] px-4 py-8 text-white flex flex-col md:px-16 lg:px-0 md:bg-[#EBEBEB] md:text-black">
+      <div className=" md:my-10 m-2 shadow-custom-b roboto-medium lg:mx-10 xl:mx-48  ">
         <h1 className=" text-2xl text-end md:text-3xl lg:text-4xl">
         {t("about.title")}
         </h1>

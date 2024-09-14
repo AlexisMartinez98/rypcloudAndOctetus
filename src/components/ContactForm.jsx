@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { VscLocation, VscMail } from "react-icons/vsc";
 
 const ContactForm = () => {
@@ -23,7 +23,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-full mx-auto px-4 py-8 bg-[#EBEBEB]">
+    <div id="contact" className="max-w-full mx-auto px-4 py-8 bg-[#EBEBEB]">
       <div className="text-center mb-8">
         <h1 className="text-4xl roboto-black mb-2">
           We're here to help you succeed
