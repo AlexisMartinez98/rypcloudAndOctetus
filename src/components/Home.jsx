@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const Home = () => {
   const {t} = useTranslation()
   return (
-    <div
+    <div id="home"
       className="relative h-screen bg-cover bg-center flex items-center gradient-mask"
       style={{
         backgroundImage: `url('https://cdn.b12.io/client_media/fvoatBts/045fbb24-6d45-11ef-b7d1-0242ac110002-jpg-hero_image.jpeg')`,
