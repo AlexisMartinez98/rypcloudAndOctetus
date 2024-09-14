@@ -20,7 +20,9 @@ const Home = () => {
         {t("home.subtitle")}
         </h2>
         <button className="bg-[#046878] text-white px-6 py-2 text-lg roboto-regular rounded-full hover:text-gray-800 transition lg:mt-4">
+       <a href="#services">
         {t("home.button")}
+        </a> 
         </button>
       </div>
     </div>

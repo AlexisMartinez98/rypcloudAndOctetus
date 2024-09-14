@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-[#393939] flex justify-between py-3 px-6 items-center roboto-regular">
       <img className="w-20 h-20" src={octetus} alt="Octetus" />
 
-      <h2 className="text-white ">
+      <h2 className="text-white text-sm ">
         Copyright 2024 RYPCLOUD&OCTETUS || Consulting Partners || Privacy Policy
       </h2>
 
