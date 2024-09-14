@@ -1,8 +1,19 @@
+import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Services from "./components/Services";
+import Home from "./components/Home";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
-      <h1 className="bg-blue-500">Micaela</h1>
-      <h2>Alexis</h2>
+      <NavBar />
+      <Home />
+      <About />
+      <Services />
+      <ContactForm />
+      <Footer/>
     </>
   );
 }

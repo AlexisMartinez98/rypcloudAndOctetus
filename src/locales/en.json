@@ -1,0 +1,33 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "title": "EMPOWERING INNOVATION",
+    "subtitle": "Experience AI solutions",
+    "button": "View Services"
+  },
+  "about": {
+    "title": "EMPOWERING SECTORS WITH AI",
+    "heading": "Innovate software solutions",
+    "description": "Ryp Cloud and Octetus specialize in developing cutting-edge software solutions infused with artificial intelligence. We cater to vital sectors such as government, finance, health, and retail, ensuring that our clients in Chile and Colombia benefit from the latest technological advancements. Our commitment to innovation drives us to create efficient, user-friendly applications that transform operations and enhance decision-making processes.",
+    "button": "Get in touch"
+  },
+  "services": {
+    "title": "TRANSFORMING INDUSTRIES WITH TECHNOLOGY",
+    "ai": {
+      "heading": "AI software development",
+      "description": "Unlock the potential of your business with our advanced AI software development services. We specialize in creating tailored solutions that enhance operational efficiency, streamline processes, and drive innovation. Our team of experts collaborates closely with clients in various sectors, including government, finance, healthcare, and retail, to deliver high-quality software that meets their unique needs."
+    },
+    "custom": {
+      "heading": "Custom software solutions",
+      "description": "Experience the power of custom software solutions designed specifically for your organization's requirements. We offer personalized software development that aligns with your goals, ensuring a seamless integration that enhances productivity and accelerates growth across various sectors including finance, healthcare, and retail."
+    },
+    "tailored_services": "Tailored services",
+    "button": "Schedule appointment"
+  }
+}
