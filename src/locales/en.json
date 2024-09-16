@@ -29,5 +29,14 @@
     },
     "tailored_services": "Tailored services",
     "button": "Schedule appointment"
+  },
+  "form": {
+    "title": "We're here to help you succeed",
+    "heading": "Reach out to our experts for tailored solutions. Let's transform your vision into reality.",
+    "name": "name",
+    "number": "Phone Number",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
   }
 }

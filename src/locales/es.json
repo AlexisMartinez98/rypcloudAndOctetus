@@ -29,5 +29,14 @@
     },
     "tailored_services": "Servicios a medida",
     "button": "Agendar cita"
+  },
+  "form": {
+    "title": "Estamos para ayudarte a tener éxito",
+    "heading": "Comuníquese con nuestros expertos para obtener soluciones personalizadas. Transformemos su visión en realidad.",
+    "name": "Nombre",
+    "number": "Numero de telefono",
+    "email": "Correo",
+    "message": "Mensaje",
+    "submit": "Enviar"
   }
 }
