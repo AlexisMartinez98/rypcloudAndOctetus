@@ -54,7 +54,7 @@ const ContactForm = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:3000/send-email", {
+      const response = await axios.post("http://20.55.75.209:3001/send-email", {
         to: formData.email,
         subject: `Consulta de ${formData.name}`,
         body: `Mensaje: ${formData.message}\nTeléfono: ${formData.phoneNumber}`,
