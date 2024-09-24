@@ -54,11 +54,14 @@ const ContactForm = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://20.55.75.209:3001/send-email", {
-        to: formData.email,
-        subject: `Consulta de ${formData.name}`,
-        body: `Mensaje: ${formData.message}\nTeléfono: ${formData.phoneNumber}`,
-      });
+      const response = await axios.post(
+        "https://rypconsultores.cl/send-email",
+        {
+          to: formData.email,
+          subject: `Consulta de ${formData.name}`,
+          body: `Mensaje: ${formData.message}\nTeléfono: ${formData.phoneNumber}`,
+        }
+      );
 
       if (response.status === 200) {
         toast.success("Email enviado con éxito!");
